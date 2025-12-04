@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan d'Investissement FMB Transmobilité Services 2025 - Premium</title>
-    <!-- Chargement de Tailwind CSS pour un style moderne et responsive -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Police Inter pour la lisibilité -->
+    <title>Plan d'Investissement 2025 – FMB TransMobilité Services SARL</title>
+    
+    <meta name="description" content="Découvrez le Plan d'Investissement 2025 de FMB TransMobilité Services. Investissez de manière sécurisée et transparente dans le transport intelligent au Sénégal avec un potentiel de 20% à 40% de rentabilité.">
+
+    <meta property="og:title" content="Plan d'Investissement FMB 2025 – Transport Rentable au Sénégal">
+    <meta property="og:description" content="Investissement sécurisé dans le transport (VTC, Minibus, Bus) avec FMB TransMobilité Services. Découvrez nos 6 formules.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[URL_DE_VOTRE_PAGE]">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ThiernoMbengue/fmb-invest-plan/f21e5df25f02c4e6447805ed65b8a139d8c38e04/8a19e201-06c9-4c7b-bd81-cdb65d835f03.png"> 
+
+    <link rel="icon" href="https://raw.githubusercontent.com/ThiernoMbengue/fmb-invest-plan/f21e5df25f02c4e6447805ed65b8a139d8c38e04/8a19e201-06c9-4c7b-bd81-cdb65d835f03.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
+        /* Styles CSS inchangés pour conserver vos animations et barres de section */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f4f7f9;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .section-title {
             position: relative;
@@ -23,17 +47,21 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 60px;
             height: 4px;
-            background-color: #0d9488; /* Teal 600 */
+            background-color: #0d9488; /* Couleur Teal de Tailwind */
             border-radius: 9999px;
         }
         .card {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
         }
         .card:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         .loading-animation {
             border: 4px solid #f3f3f3;
@@ -43,484 +71,517 @@
             height: 24px;
             animation: spin 1s linear infinite;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
+
 <body class="text-gray-800">
 
-    <!-- Navbar de navigation -->
-    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <span class="text-xl font-bold text-teal-300">FMB Invest 2025</span>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4 text-sm font-medium">
-                        <a href="#presentation" class="hover:bg-gray-700 px-3 py-2 rounded-md">Présentation</a>
-                        <a href="#formules" class="hover:bg-gray-700 px-3 py-2 rounded-md">Formules</a>
-                        <a href="#personnalise" class="hover:bg-gray-700 px-3 py-2 rounded-md bg-teal-600">Mon Plan LLM</a>
-                        <a href="#modeles" class="hover:bg-gray-700 px-3 py-2 rounded-md">Modèles & Roadmap</a>
-                    </div>
-                </div>
+<header class="bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="https://raw.githubusercontent.com/ThiernoMbengue/fmb-invest-plan/f21e5df25f02c4e6447805ed65b8a139d8c38e04/8a19e201-06c9-4c7b-bd81-cdb65d835f03.png"
+                 alt="Logo FMB" class="h-12 w-auto bg-white rounded-md shadow-lg p-1 border border-gray-200">
+            <div>
+                <h1 class="text-xl font-extrabold text-gray-900 leading-snug">
+                    FMB TransMobilité Services SARL
+                </h1>
+                <p class="text-sm text-teal-600 font-semibold -mt-0.5">Plan d’Investissement 2025</p>
             </div>
         </div>
-    </nav>
 
-    <header class="bg-gray-900 text-white py-6 shadow-xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-extrabold tracking-tight">
-                📘 PLAN D’INVESTISSEMENT FMB TRANSMOBILITÉ SERVICES
-            </h1>
-            <p class="mt-2 text-xl font-medium text-teal-300">Version Premium (Texte Complet) - Devenez un investisseur du futur.</p>
+        <div class="hidden md:flex flex-col text-right text-sm text-gray-700">
+            <span class="font-bold text-teal-700">Contactez-nous</span>
+            <span class="font-medium">📩 ndamaniang99@gmail.com</span>
+            <span class="font-medium">📞 +33 06 95 42 96 71</span>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-
-        <!-- Section 1 : Présentation -->
-        <section id="presentation" class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-gray-900">1. Présentation de FMB Transmobilité Services</h2>
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
-                <p class="text-lg mb-4 leading-relaxed">
-                    **FMB Transmobilité Services** est une entreprise de transport moderne, structurée et digitalisée, spécialisée dans l'optimisation de vos actifs de transport.
-                </p>
-                <div class="mt-6">
-                    <h3 class="text-xl font-semibold text-teal-700 mb-3">Nos Domaines d'Expertise :</h3>
-                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
-                        <li>La gestion de véhicules (bus, minibus, voitures Yango, Heetch)</li>
-                        <li>L’accompagnement à l’achat sécurisé et certifié</li>
-                        <li>La gestion complète et professionnelle des chauffeurs</li>
-                        <li>Le suivi digital des revenus et des dépenses en temps réel</li>
-                        <li>L’investissement partagé dans les flottes de transport</li>
-                    </ul>
-                </div>
-                <blockquote class="mt-6 p-4 border-l-4 border-teal-500 bg-teal-50 rounded-r-lg">
-                    <p class="text-xl font-semibold text-teal-800">
-                        <span class="mr-2 text-2xl">👉</span> Notre objectif : Permettre à toute personne — au Sénégal ou dans la diaspora — d’investir dans un secteur <span class="text-teal-700 font-extrabold">rentable, sûr et transparent.</span>
-                    </p>
-                </blockquote>
+<nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-12">
+            <span class="text-md font-bold text-teal-300 uppercase tracking-widest">FMB Invest 2025</span>
+            <div class="hidden md:flex space-x-4 text-sm font-medium">
+                <a href="#presentation" class="px-3 py-2 hover:bg-gray-700 rounded-md transition duration-200">Présentation</a>
+                <a href="#formules" class="px-3 py-2 hover:bg-gray-700 rounded-md transition duration-200">Nos Formules</a>
+                <a href="#personnalise" class="px-3 py-2 bg-teal-600 hover:bg-teal-500 rounded-full shadow-md transition duration-200">Mon Plan LLM</a>
+                <a href="#contact" class="px-3 py-2 hover:bg-gray-700 rounded-md transition duration-200">Contact</a>
             </div>
-        </section>
+        </div>
+    </div>
+</nav>
 
-        <!-- Section 2 : Vision & Rentabilité -->
-        <section class="mb-16 grid md:grid-cols-2 gap-8">
-            <!-- Vision -->
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg card">
-                <h2 class="section-title text-2xl font-bold text-gray-900">2. Notre Vision</h2>
-                <p class="mb-4 text-gray-700">
-                    Créer la première plateforme d’investissement transport en Afrique de l’Ouest, basée sur :
-                </p>
-                <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
-                    <li>La transparence et la sécurité maximales</li>
-                    <li>Des données réelles et vérifiables</li>
-                    <li>Des revenus stables et mesurables</li>
-                    <li>Une gestion professionnelle et digitalisée</li>
-                </ul>
-                <p class="mt-4 text-lg font-medium text-teal-700">
-                    Nous permettons d'investir, même avec un petit capital **(à partir de 500 000 FCFA)**.
-                </p>
-            </div>
+<section class="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-12 shadow-2xl">
+    <div class="max-w-7xl mx-auto px-4">
+        <p class="text-xl font-light tracking-wider mb-2 uppercase text-teal-300">
+            Dossier Premium
+        </p>
+        <h2 class="text-5xl font-extrabold tracking-tight mb-4">
+            Investissement Sécurisé dans le Transport Africain
+        </h2>
+        <p class="text-2xl text-white/90 font-medium border-l-4 border-teal-300 pl-4 italic">
+            Atteignez une rentabilité annuelle de <strong>20% à 40%</strong> en toute transparence.
+        </p>
+    </div>
+</section>
 
-            <!-- Rentabilité -->
-            <div class="bg-teal-700 text-white p-6 md:p-8 rounded-xl shadow-lg card">
-                <h2 class="section-title text-2xl font-bold text-white after:bg-white">3. Pourquoi le transport est rentable au Sénégal ?</h2>
-                <div class="space-y-3">
-                    <p class="text-lg font-light">Le Sénégal connaît :</p>
-                    <ul class="list-disc list-inside space-y-2 ml-4 font-light">
-                        <li>Une forte urbanisation et un besoin croissant de mobilité</li>
-                        <li>La montée en puissance des VTC (Yango, Heetch)</li>
-                        <li>Un manque de solutions de gestion professionnelles (votre opportunité)</li>
-                        <li>Une demande énorme de la diaspora pour des investissements sécurisés</li>
-                    </ul>
-                </div>
-                <div class="mt-6 p-4 bg-teal-900 rounded-lg text-center">
-                    <p class="text-4xl font-extrabold text-yellow-300">🔥 20% à 40%</p>
-                    <p class="text-lg font-semibold mt-1">Rentabilité moyenne par an</p>
-                    <p class="text-sm font-light italic mt-2">Bien plus élevée que l’immobilier ou les placements bancaires traditionnels.</p>
-                </div>
-                <!-- Ajout d'une carte graphique de comparaison pour la rentabilité -->
-                <div class="mt-4 text-center">
-                    <p class="text-sm font-medium text-teal-200 mb-2">Comparatif de Rendement Annuel :</p>
-                    
-                </div>
-            </div>
-        </section>
+<main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
 
-        <!-- Section 4 : Nos Garanties -->
-        <section class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-gray-900">4. Nos Garanties : L'Investissement Sans Stress</h2>
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-t-4 border-teal-500">
-                <p class="text-xl font-medium mb-6">
-                    FMB gère tout pour vous assurer tranquillité d'esprit et performance.
-                </p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <p class="font-bold text-teal-600">Sécurité Juridique</p>
-                        <ul class="text-sm mt-1 space-y-1 text-gray-700">
-                            <li>Contrats légaux (SARL)</li>
-                            <li>Assurance véhicule complète</li>
-                            <li>Structure crédible pour banques</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <p class="font-bold text-teal-600">Transparence Digitale</p>
-                        <ul class="text-sm mt-1 space-y-1 text-gray-700">
-                            <li>Dashboard de suivi (digital)</li>
-                            <li>Reporting mensuel détaillé</li>
-                            <li>GPS et suivi en temps réel</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <p class="font-bold text-teal-600">Gestion Opérationnelle</p>
-                        <ul class="text-sm mt-1 space-y-1 text-gray-700">
-                            <li>Gestion chauffeur & maintenance</li>
-                            <li>Accès sécurisé investisseurs</li>
-                            <li>FMB s’occupe de tout le stress</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 5 : Formules d'Investissement -->
-        <section id="formules" class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-gray-900">5. Nos Formules d’Investissement</h2>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-
-                <!-- Formule 1 -->
-                <div class="card bg-white p-6 rounded-xl border-l-4 border-teal-500 shadow-md">
-                    <h3 class="text-2xl font-bold text-teal-700 mb-3">FORMULE 1 : Gestion Assistée</h3>
-                    <p class="text-sm font-semibold text-gray-600 mb-4">(Le client apporte son véhicule)</p>
-                    <ul class="text-sm space-y-2 text-gray-700">
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 text-xl">✔️</span>Pour qui ? Propriétaires fatigués des chauffeurs, Diaspora.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 text-xl">✔️</span>FMB gère : Planning Yango, chauffeur, entretien, assurance, versements.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 text-xl">✔️</span>**Répartition : 80% Investisseur / 20% FMB.**</li>
-                        <li class="font-bold mt-2 text-green-700">Revenus moyens : **250 000 à 400 000 FCFA / mois.**</li>
-                    </ul>
-                </div>
-
-                <!-- Formule 2 -->
-                <div class="card bg-white p-6 rounded-xl border-l-4 border-orange-500 shadow-md">
-                    <h3 class="text-2xl font-bold text-orange-700 mb-3">FORMULE 2 : Accompagnement Achat</h3>
-                    <p class="text-sm font-semibold text-gray-600 mb-4">(FMB aide à acheter le véhicule)</p>
-                    <ul class="text-sm space-y-2 text-gray-700">
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 text-xl">✔️</span>FMB s’occupe de : Choix du modèle, diagnostic moteur, achat et transport.</li>
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 text-xl">✔️</span>Objectif : Éviter arnaques, véhicules non fiables, réparations inutiles.</li>
-                        <li class="flex items-start"><span class="text-orange-500 mr-2 text-xl">✔️</span>Mise en route : Installation, chauffeur, Yango ou transport classique.</li>
-                        <li class="font-bold mt-2 text-orange-700">**Frais FMB : 150 000 à 250 000 FCFA (forfait unique).**</li>
-                    </ul>
-                </div>
-
-                <!-- Formule 3 -->
-                <div class="card bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-md">
-                    <h3 class="text-2xl font-bold text-blue-700 mb-3">FORMULE 3 : Investissement Capital</h3>
-                    <p class="text-sm font-semibold text-gray-600 mb-4">(Tu investis un montant, FMB achète le véhicule)</p>
-                    <ul class="text-sm space-y-2 text-gray-700">
-                        <li class="flex items-start"><span class="text-blue-500 mr-2 text-xl">✔️</span>Fonctionnement : Vous investissez un montant (ex : 1M FCFA), FMB complète.</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-2 text-xl">✔️</span>Gestion : FMB gère entièrement le véhicule et l'exploitation.</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-2 text-xl">✔️</span>Revenus : Proportionnels à votre capital investi.</li>
-                        <li class="font-bold mt-2 text-blue-700">Idéal diaspora : Investissement sans stress, revenu mensuel.</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Formules Spécialisées -->
-            <div class="mt-8">
-                <h3 class="text-xl font-bold text-gray-800 mb-4 mt-8">Formules Spécialisées pour Fort Potentiel</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- Formule 4 -->
-                    <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
-                        <p class="font-bold text-lg text-teal-800">FORMULE 4 : Pack Diaspora ✈️</p>
-                        <p class="text-sm mt-1 text-gray-600">Investissement 100% à distance. Idéal France, USA, Canada, etc.</p>
-                        <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
-                            <li>Achat + mise en route clé en main</li>
-                            <li>**Versement via Wave, WU, banque.**</li>
-                        </ul>
-                    </div>
-                    <!-- Formule 5 -->
-                    <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
-                        <p class="font-bold text-lg text-teal-800">FORMULE 5 : Fleet Fund (Collectif) 👥</p>
-                        <p class="text-sm mt-1 text-gray-600">Investissement collectif dans un ou plusieurs véhicules.</p>
-                        <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
-                            <li>Capital minimum accessible **(500k FCFA)**.</li>
-                            <li>Idéal pour tontines, groupes d'amis.</li>
-                        </ul>
-                    </div>
-                    <!-- Formule 6 -->
-                    <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
-                        <p class="font-bold text-lg text-teal-800">FORMULE 6 : Investissement Minibus / Bus 🚌</p>
-                        <p class="text-sm mt-1 text-gray-600">Très forte rentabilité et revenu mensuel stable.</p>
-                        <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
-                            <li>Minimum : **2 000 000 FCFA** (FMB complète).</li>
-                            <li>Revenus moyens : **500 000 à 800 000 FCFA / mois.**</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Nouveau: Générateur de Plan Personnalisé LLM -->
-        <section id="personnalise" class="mb-16 py-10 bg-teal-900 text-white rounded-xl shadow-2xl">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-teal-300 mb-4 text-center">
-                    Créer mon Plan Personnalisé ✨
-                </h2>
-                <p class="text-center mb-8 text-lg font-light">
-                    Recevez une recommandation stratégique basée sur les 6 formules d'investissement FMB, adaptée à votre capital et votre profil.
-                </p>
-                
-                <div class="grid md:grid-cols-3 gap-6 mb-6">
-                    <div>
-                        <label for="capital" class="block text-sm font-medium text-teal-200 mb-2">Capital Initial (FCFA)</label>
-                        <input type="number" id="capital" value="1000000" min="500000" step="100000" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-teal-500 focus:border-teal-500" placeholder="Ex: 1 000 000">
-                    </div>
-                    <div class="md:col-span-2">
-                        <label for="riskProfile" class="block text-sm font-medium text-teal-200 mb-2">Profil de Risque</label>
-                        <select id="riskProfile" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-teal-500 focus:border-teal-500">
-                            <option value="Faible - Je privilégie la sécurité et un revenu stable.">Faible (Sécurité & Stabilité)</option>
-                            <option value="Modéré - Je cherche un équilibre entre croissance et risque.">Modéré (Équilibre)</option>
-                            <option value="Élevé - Je suis prêt(e) à prendre des risques pour une rentabilité maximale.">Élevé (Max. Rentabilité)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <button id="generatePlanBtn" onclick="generateInvestmentPlan()" class="inline-flex items-center justify-center w-full md:w-auto px-8 py-3 text-lg font-bold text-gray-900 bg-teal-300 rounded-full hover:bg-teal-200 transition duration-300 shadow-xl">
-                        Analyser et Générer mon Plan ✨
-                    </button>
-                </div>
-
-                <!-- Zone de résultat et chargement -->
-                <div id="planResult" class="mt-8 p-6 bg-gray-800 rounded-xl border border-teal-500 hidden">
-                    <div id="loadingIndicator" class="hidden justify-center items-center space-x-3">
-                        <div class="loading-animation"></div>
-                        <span class="text-teal-400 font-semibold">Analyse en cours...</span>
-                    </div>
-                    <div id="planText" class="text-gray-200 space-y-4">
-                        <!-- Le texte généré par Gemini sera inséré ici -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Section 8 & 9 : Conclusion & Roadmap -->
-        <section class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-gray-900">8. Conclusion</h2>
-            <div class="bg-gray-800 text-white p-6 md:p-8 rounded-xl shadow-2xl">
-                <p class="text-xl font-light mb-4">
-                    FMB Transmobilité Services offre une solution simple, rentable et professionnelle pour investir dans le transport au Sénégal.
-                </p>
-                <blockquote class="p-4 border-l-4 border-teal-300 bg-gray-700 rounded-r-lg">
-                    <p class="text-xl font-semibold text-teal-300">
-                        Notre mission : Permettre aux Sénégalais et à la diaspora d’investir dans un secteur essentiel, <span class="font-extrabold">sans risques inutiles ni mauvaise gestion.</span>
-                    </p>
-                </blockquote>
-
-                <h3 class="text-2xl font-bold text-teal-300 mt-8 mb-4 section-title after:bg-teal-300">9. Notre Feuille de Route (Roadmap)</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">✨ Plateforme web d’investissement</span>
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">📊 Dashboards financiers avancés</span>
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🛒 Marketplace de véhicules certifiés</span>
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🛡️ Assurance FMB dédiée</span>
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🚜 Investissement agricole + logistique</span>
-                    <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🚘 Leasing intelligent</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="text-center py-12 bg-teal-50 rounded-xl border border-teal-200 shadow-inner">
-            <h2 class="text-3xl font-extrabold text-teal-800 mb-4">Prêt à investir dans l'avenir du transport ?</h2>
-            <p class="text-xl text-teal-700 mb-6">
-                Contactez FMB Transmobilité Services dès aujourd'hui pour démarrer votre placement.
+    <section id="presentation" class="mb-16">
+        <h2 class="section-title text-3xl font-bold text-gray-900">1. Présentation de FMB Transmobilité Services</h2>
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <p class="text-lg mb-4 leading-relaxed">
+                <strong>FMB TransMobilité Services SARL</strong> est une entreprise de transport moderne, structurée et digitalisée, spécialisée dans l'optimisation de vos actifs de transport.
             </p>
-            <a href="#" class="inline-block px-8 py-3 text-lg font-bold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-300 shadow-lg">
-                Demander plus d'informations
-            </a>
-            <p class="mt-4 text-sm text-gray-600">FIN DU DOCUMENT (Version Premium)</p>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-900 text-gray-400 py-6 mt-12">
-        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
-            © 2025 FMB Transmobilité Services. Tous droits réservés.
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-teal-700 mb-3">Nos Domaines d'Expertise :</h3>
+                <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                    <li>La gestion de véhicules (bus, minibus, voitures Yango, Heetch)</li>
+                    <li>L’accompagnement à l’achat sécurisé et certifié</li>
+                    <li>La gestion complète et professionnelle des chauffeurs</li>
+                    <li>Le suivi digital des revenus et des dépenses en temps réel</li>
+                    <li>L’investissement partagé dans les flottes de transport</li>
+                </ul>
+            </div>
+            <blockquote class="mt-6 p-4 border-l-4 border-teal-500 bg-teal-50 rounded-r-lg">
+                <p class="text-xl font-semibold text-teal-800">
+                    <span class="mr-2 text-2xl">👉</span> Notre objectif : Permettre à toute personne — au Sénégal ou dans la diaspora — d’investir dans un secteur <span class="text-teal-700 font-extrabold">rentable, sûr et transparent.</span>
+                </p>
+            </blockquote>
         </div>
-    </footer>
+    </section>
 
-    <!-- Firebase and Gemini API setup (Necessary for the LLM feature) -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    <section class="mb-16 grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg card">
+            <h2 class="section-title text-2xl font-bold text-gray-900">2. Notre Vision</h2>
+            <p class="mb-4 text-gray-700">
+                Créer la première plateforme d’investissement transport en Afrique de l’Ouest, basée sur :
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                <li>La transparence et la sécurité maximales</li>
+                <li>Des données réelles et vérifiables</li>
+                <li>Des revenus stables et mesurables</li>
+                <li>Une gestion professionnelle et digitalisée</li>
+            </ul>
+            <p class="mt-4 text-lg font-medium text-teal-700">
+                Nous permettons d'investir, même avec un petit capital <strong>(à partir de 500 000 FCFA)</strong>.
+            </p>
+        </div>
 
-        // Global variables provided by the Canvas environment
-        // NOTE: The actual API key is defined in the non-module script below for direct use in the LLM call.
-        const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
-        
-        // Initialize Firebase and Auth (Mandatory boilerplate)
-        let auth;
-        if (Object.keys(firebaseConfig).length) {
-            const app = initializeApp(firebaseConfig);
-            auth = getAuth(app);
-            const db = getFirestore(app); // Initialize Firestore, even if not directly used here, for environment readiness
+        <div class="bg-teal-700 text-white p-6 md:p-8 rounded-xl shadow-lg card">
+            <h2 class="section-title text-2xl font-bold text-white after:bg-white">3. Pourquoi le transport est rentable au Sénégal ?</h2>
+            <div class="space-y-3">
+                <p class="text-lg font-light">Le Sénégal connaît :</p>
+                <ul class="list-disc list-inside space-y-2 ml-4 font-light">
+                    <li>Une forte urbanisation et un besoin croissant de mobilité</li>
+                    <li>La montée en puissance des VTC (Yango, Heetch)</li>
+                    <li>Un manque de solutions de gestion professionnelles (votre opportunité)</li>
+                    <li>Une demande énorme de la diaspora pour des investissements sécurisés</li>
+                </ul>
+            </div>
+            <div class="mt-6 p-4 bg-teal-900 rounded-lg text-center">
+                <p class="text-4xl font-extrabold text-yellow-300">🔥 20% à 40%</p>
+                <p class="text-lg font-semibold mt-1">Rentabilité moyenne par an</p>
+                <p class="text-sm font-light italic mt-2">Bien plus élevée que l’immobilier ou les placements bancaires traditionnels.</p>
+            </div>
+        </div>
+    </section>
 
-            // Sign in (using custom token if available, otherwise anonymously)
-            if (initialAuthToken) {
-                signInWithCustomToken(auth, initialAuthToken).catch(e => {
-                    console.error("Firebase Custom Auth failed, signing in anonymously.", e);
-                    signInAnonymously(auth);
-                });
-            } else {
+    <section class="mb-16">
+        <h2 class="section-title text-3xl font-bold text-gray-900">4. Nos Garanties : L'Investissement Sans Stress</h2>
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-t-4 border-teal-500">
+            <p class="text-xl font-medium mb-6">
+                FMB gère tout pour vous assurer tranquillité d'esprit et performance.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-bold text-teal-600">Sécurité Juridique</p>
+                    <ul class="text-sm mt-1 space-y-1 text-gray-700">
+                        <li>Contrats légaux (SARL)</li>
+                        <li>Assurance véhicule complète</li>
+                        <li>Structure crédible pour banques</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-bold text-teal-600">Transparence Digitale</p>
+                    <ul class="text-sm mt-1 space-y-1 text-gray-700">
+                        <li>Dashboard de suivi (digital)</li>
+                        <li>Reporting mensuel détaillé</li>
+                        <li>GPS et suivi en temps réel</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-bold text-teal-600">Gestion Opérationnelle</p>
+                    <ul class="text-sm mt-1 space-y-1 text-gray-700">
+                        <li>Gestion chauffeur & maintenance</li>
+                        <li>Accès sécurisé investisseurs</li>
+                        <li>FMB s’occupe de tout le stress</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formules" class="mb-16">
+        <h2 class="section-title text-3xl font-bold text-gray-900">5. Nos Formules d’Investissement</h2>
+        <p class="text-lg text-gray-600 mb-8">Choisissez la formule qui correspond le mieux à votre objectif : capitalisation passive, investissement partagé ou gestion professionnelle de vos actifs existants.</p>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+
+            <div class="card bg-white p-8 rounded-xl border-t-8 border-teal-500 shadow-xl flex flex-col h-full">
+                <div class="mb-6">
+                    <h3 class="text-3xl font-extrabold text-teal-800">1. Gestion Assistée</h3>
+                    <p class="text-sm font-semibold text-gray-500 mt-1">Pour les propriétaires de véhicule.</p>
+                </div>
+                
+                <div class="flex-grow space-y-4">
+                    <p class="text-lg font-bold text-gray-700">Le Service Clé en Main</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 text-xl">✅</span> Gestion complète (Chauffeur, Yango/Heetch, Assurance).</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 text-xl">✅</span> Reporting digital mensuel (Transparence).</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 text-xl">✅</span> Pour la <strong>Diaspora</strong> et les <strong>Propriétaires saturés</strong>.</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <p class="text-md font-medium text-gray-600">Votre Part des Revenus :</p>
+                    <p class="text-4xl font-extrabold text-teal-600 mt-1 mb-3">90%</p>
+                    <p class="font-bold text-green-700">Revenus Estimés: <strong>250k à 400k FCFA / mois</strong></p>
+                </div>
+            </div>
+
+            <div class="card bg-white p-8 rounded-xl border-t-8 border-orange-500 shadow-xl flex flex-col h-full">
+                <div class="mb-6">
+                    <h3 class="text-3xl font-extrabold text-orange-800">2. Accompagnement Achat</h3>
+                    <p class="text-sm font-semibold text-gray-500 mt-1">Sécurisez votre acquisition.</p>
+                </div>
+                
+                <div class="flex-grow space-y-4">
+                    <p class="text-lg font-bold text-gray-700">Sécurité et Certification</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-orange-500 mr-3 text-xl">🛠️</span> Diagnostic moteur et carrosserie certifié.</li>
+                        <li class="flex items-start"><span class="text-orange-500 mr-3 text-xl">🛡️</span> Négociation et transport du véhicule sécurisés.</li>
+                        <li class="flex items-start"><span class="text-orange-500 mr-3 text-xl">💡</span> Idéal pour <strong>éviter les arnaques</strong> locales.</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <p class="text-md font-medium text-gray-600">Coût du Service :</p>
+                    <p class="text-4xl font-extrabold text-orange-600 mt-1 mb-3">Forfait Unique</p>
+                    <p class="font-bold text-orange-700">Frais FMB : <strong>150 000 à 250 000 FCFA</strong></p>
+                </div>
+            </div>
+
+            <div class="card bg-white p-8 rounded-xl border-t-8 border-blue-600 shadow-2xl scale-[1.03] flex flex-col h-full relative">
+                <span class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">POPULAIRE</span>
+                <div class="mb-6">
+                    <h3 class="text-3xl font-extrabold text-blue-800">3. Investissement Capital</h3>
+                    <p class="text-sm font-semibold text-gray-500 mt-1">Le choix de la rentabilité passive.</p>
+                </div>
+                
+                <div class="flex-grow space-y-4">
+                    <p class="text-lg font-bold text-gray-700">Investissement Passif</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-blue-600 mr-3 text-xl">💰</span> Vous investissez un capital (à partir de <strong>500k FCFA</strong>).</li>
+                        <li class="flex items-start"><span class="text-blue-600 mr-3 text-xl">🔄</span> FMB achète, gère et exploite le véhicule.</li>
+                        <li class="flex items-start"><span class="text-blue-600 mr-3 text-xl">⭐</span> Revenus et plus-value proportionnels à votre part.</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <p class="text-md font-medium text-gray-600">Niveau de Stress :</p>
+                    <p class="text-4xl font-extrabold text-blue-600 mt-1 mb-3">ZÉRO</p>
+                    <p class="font-bold text-blue-700">Idéal pour : <strong>Investisseurs à distance et capitalisation.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 mt-8">Formules Spécialisées pour Fort Potentiel</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
+                    <p class="font-bold text-lg text-teal-800">FORMULE 4 : Pack Diaspora ✈️</p>
+                    <p class="text-sm mt-1 text-gray-600">Investissement 100% à distance. Idéal France, USA, Canada, etc.</p>
+                    <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
+                        <li>Achat + mise en route clé en main</li>
+                        <li><strong>Versement via Wave, WU, banque.</strong></li>
+                    </ul>
+                </div>
+                <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
+                    <p class="font-bold text-lg text-teal-800">FORMULE 5 : Fleet Fund (Collectif) 👥</p>
+                    <p class="text-sm mt-1 text-gray-600">Investissement collectif dans un ou plusieurs véhicules.</p>
+                    <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
+                        <li>Capital minimum accessible <strong>(500k FCFA).</strong></li>
+                        <li>Idéal pour tontines, groupes d'amis.</li>
+                    </ul>
+                </div>
+                <div class="p-5 bg-teal-50 rounded-xl border border-teal-200">
+                    <p class="font-bold text-lg text-teal-800">FORMULE 6 : Investissement Minibus / Bus 🚌</p>
+                    <p class="text-sm mt-1 text-gray-600">Très forte rentabilité et revenu mensuel stable.</p>
+                    <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
+                        <li>Minimum : <strong>2 000 000 FCFA (FMB complète)</strong></li>
+                        <li>Revenus moyens : <strong>500 000 à 800 000 FCFA / mois.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personnalise" class="mb-16 py-10 bg-teal-900 text-white rounded-xl shadow-2xl">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-teal-300 mb-4 text-center">
+                Créer mon Plan Personnalisé ✨
+            </h2>
+            <p class="text-center mb-8 text-lg font-light">
+                Recevez une recommandation stratégique basée sur les 6 formules d'investissement FMB, adaptée à votre capital et votre profil.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div>
+                    <label for="capital" class="block text-sm font-medium text-teal-200 mb-2">Capital Initial (FCFA)</label>
+                    <input type="number" id="capital" value="1000000" min="500000" step="100000" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-teal-500 focus:border-teal-500" placeholder="Ex: 1 000 000">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="riskProfile" class="block text-sm font-medium text-teal-200 mb-2">Profil de Risque</label>
+                    <select id="riskProfile" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-teal-500 focus:border-teal-500">
+                        <option value="Faible - Je privilégie la sécurité et un revenu stable.">Faible (Sécurité & Stabilité)</option>
+                        <option value="Modéré - Je cherche un équilibre entre croissance et risque.">Modéré (Équilibre)</option>
+                        <option value="Élevé - Je suis prêt(e) à prendre des risques pour une rentabilité maximale.">Élevé (Max. Rentabilité)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="generatePlanBtn" onclick="generateInvestmentPlan()" class="inline-flex items-center justify-center w-full md:w-auto px-8 py-3 text-lg font-bold text-gray-900 bg-teal-300 rounded-full hover:bg-teal-200 transition duration-300 shadow-xl">
+                    Analyser et Générer mon Plan ✨
+                </button>
+            </div>
+
+            <div id="planResult" class="mt-8 p-6 bg-gray-800 rounded-xl border border-teal-500 hidden">
+                <div id="loadingIndicator" class="hidden justify-center items-center space-x-3">
+                    <div class="loading-animation"></div>
+                    <span class="text-teal-400 font-semibold">Analyse en cours...</span>
+                </div>
+                <div id="planText" class="text-gray-200 space-y-4">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h2 class="section-title text-3xl font-bold text-gray-900">8. Conclusion</h2>
+        <div class="bg-gray-800 text-white p-6 md:p-8 rounded-xl shadow-2xl">
+            <p class="text-xl font-light mb-4">
+                FMB Transmobilité Services offre une solution simple, rentable et professionnelle pour investir dans le transport au Sénégal.
+            </p>
+            <blockquote class="p-4 border-l-4 border-teal-300 bg-gray-700 rounded-r-lg">
+                <p class="text-xl font-semibold text-teal-300">
+                    Notre mission : Permettre aux Sénégalais et à la diaspora d’investir dans un secteur essentiel, <span class="font-extrabold">sans risques inutiles ni mauvaise gestion.</span>
+                </p>
+            </blockquote>
+
+            <h3 class="text-2xl font-bold text-teal-300 mt-8 mb-4 section-title after:bg-teal-300">9. Notre Feuille de Route (Roadmap)</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">✨ Plateforme web d’investissement</span>
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">📊 Dashboards financiers avancés</span>
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🛒 Marketplace de véhicules certifiés</span>
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🛡️ Assurance FMB dédiée</span>
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🚜 Investissement agricole + logistique</span>
+                <span class="bg-gray-700 p-3 rounded-lg flex items-center shadow-inner">🚘 Leasing intelligent</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-12 bg-teal-50 rounded-xl border border-teal-200 shadow-inner" id="contact">
+        <h2 class="text-3xl font-extrabold text-teal-800 mb-4">
+            Prêt à investir dans l'avenir du transport ?
+        </h2>
+        <p class="text-xl text-teal-700 mb-6">
+            Contactez-nous dès aujourd’hui pour recevoir votre étude personnalisée :
+        </p>
+
+        <p class="font-semibold text-gray-700 mb-2">
+            📩 ndamaniang99@gmail.com
+        </p>
+        <p class="font-semibold text-gray-700 mb-4">
+            📞 +33 06 95 42 96 71
+        </p>
+
+        <a href="mailto:ndamaniang99@gmail.com"
+            class="px-10 py-3 bg-teal-600 text-white rounded-full font-bold hover:bg-teal-700 shadow-lg">
+            Demander plus d'informations
+        </a>
+
+        <p class="mt-4 text-sm text-gray-600">Version Premium 2025</p>
+    </section>
+
+</main>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // Global variables provided by the Canvas environment
+    // NOTE: The actual API key is defined in the non-module script below for direct use in the LLM call.
+    const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+    
+    // Initialize Firebase and Auth (Mandatory boilerplate)
+    let auth;
+    if (Object.keys(firebaseConfig).length) {
+        const app = initializeApp(firebaseConfig);
+        auth = getAuth(app);
+        const db = getFirestore(app); // Initialize Firestore, even if not directly used here, for environment readiness
+
+        // Sign in (using custom token if available, otherwise anonymously)
+        if (initialAuthToken) {
+            signInWithCustomToken(auth, initialAuthToken).catch(e => {
+                console.error("Firebase Custom Auth failed, signing in anonymously.", e);
                 signInAnonymously(auth);
-            }
-        }
-    </script>
-
-    <!-- Script for the LLM Feature -->
-    <script>
-        const planResultDiv = document.getElementById('planResult');
-        const planTextDiv = document.getElementById('planText');
-        const loadingIndicator = document.getElementById('loadingIndicator');
-        const generatePlanBtn = document.getElementById('generatePlanBtn');
-        
-        // ATTENTION : Cette clé est maintenant insérée. Assurez-vous qu'elle est sécurisée (restrictions IP/Domaine).
-        const apiKey = "AIzaSyAONvs3BJJVmyubLkaYcSi7mWMIYgyTX1s"; 
-        
-        const LLM_MODEL = 'gemini-2.5-flash-preview-09-2025';
-        const LLM_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${LLM_MODEL}:generateContent?key=${apiKey}`; 
-
-        // Simple function to extract the full text of the investment plan from the HTML (sections 1-9)
-        function getDocumentContentForLLM() {
-            const sections = document.querySelectorAll('main > section');
-            let content = "";
-            sections.forEach(section => {
-                // Exclude the LLM feature section itself and the Call to Action
-                if (!section.classList.contains('bg-teal-900') && !section.classList.contains('text-center')) {
-                    content += section.innerText.trim() + "\n\n---\n\n";
-                }
             });
-            // Add a clear instruction based on the section content structure
-            return "Voici le Plan d'Investissement FMB Transmobilité Services, incluant la description détaillée des 6 Formules d'Investissement :\n\n" + content;
+        } else {
+            signInAnonymously(auth);
         }
+    }
+</script>
 
-        // Exponential backoff utility for API retries
-        async function fetchWithExponentialBackoff(url, options, retries = 5, delay = 1000) {
-            for (let i = 0; i < retries; i++) {
-                try {
-                    const response = await fetch(url, options);
-                    if (response.status !== 429) { // 429 is Too Many Requests
-                        return response;
-                    }
-                    console.warn(`Rate limit hit. Retrying in ${delay / 1000}s...`);
-                } catch (error) {
-                    if (i === retries - 1) throw error;
-                    console.error("Fetch failed, retrying...", error);
-                }
-                await new Promise(resolve => setTimeout(resolve, delay));
-                delay *= 2;
+<script>
+    const planResultDiv = document.getElementById('planResult');
+    const planTextDiv = document.getElementById('planText');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const generatePlanBtn = document.getElementById('generatePlanBtn');
+    
+    // ATTENTION : Cette clé est insérée.
+    const apiKey = "AIzaSyAONvs3BJJVmyubLkaYcSi7mWMIYgyTX1s"; 
+    
+    const LLM_MODEL = 'gemini-2.5-flash-preview-09-2025';
+    const LLM_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${LLM_MODEL}:generateContent?key=${apiKey}`; 
+
+    // Simple function to extract the full text of the investment plan from the HTML (sections 1-9)
+    function getDocumentContentForLLM() {
+        const sections = document.querySelectorAll('main > section');
+        let content = "";
+        sections.forEach(section => {
+            // Exclude the LLM feature section itself and the Call to Action
+            if (!section.classList.contains('bg-teal-900') && !section.classList.contains('text-center')) {
+                content += section.innerText.trim() + "\n\n---\n\n";
             }
-            throw new Error("API request failed after multiple retries.");
+        });
+        // Add a clear instruction based on the section content structure
+        return "Voici le Plan d'Investissement FMB Transmobilité Services, incluant la description détaillée des 6 Formules d'Investissement :\n\n" + content;
+    }
+
+    // Exponential backoff utility for API retries
+    async function fetchWithExponentialBackoff(url, options, retries = 5, delay = 1000) {
+        for (let i = 0; i < retries; i++) {
+            try {
+                const response = await fetch(url, options);
+                if (response.status !== 429) { // 429 is Too Many Requests
+                    return response;
+                }
+                console.warn(`Rate limit hit. Retrying in ${delay / 1000}s...`);
+            } catch (error) {
+                if (i === retries - 1) throw error;
+                console.error("Fetch failed, retrying...", error);
+            }
+            await new Promise(resolve => setTimeout(resolve, delay));
+            delay *= 2;
+        }
+        throw new Error("API request failed after multiple retries.");
+    }
+
+    async function generateInvestmentPlan() {
+        const capital = document.getElementById('capital').value;
+        const riskProfile = document.getElementById('riskProfile').value;
+        const documentContent = getDocumentContentForLLM();
+
+        // Simple check to ensure the key isn't a placeholder (though the user already provided one)
+        if (!apiKey) {
+            planResultDiv.classList.remove('hidden');
+            planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Erreur de Configuration : La clé API Gemini est manquante.</p>';
+            loadingIndicator.classList.add('hidden');
+            generatePlanBtn.disabled = false;
+            return;
+        }
+        
+        if (!capital || capital < 500000) {
+            planResultDiv.classList.remove('hidden');
+            planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Veuillez entrer un capital initial valide (minimum 500 000 FCFA).</p>';
+            return;
         }
 
-        async function generateInvestmentPlan() {
-            const capital = document.getElementById('capital').value;
-            const riskProfile = document.getElementById('riskProfile').value;
-            const documentContent = getDocumentContentForLLM();
+        // Show loading and disable button
+        planResultDiv.classList.remove('hidden');
+        planTextDiv.innerHTML = '';
+        loadingIndicator.classList.remove('hidden');
+        generatePlanBtn.disabled = true;
 
-            // Simple check to ensure the key isn't a placeholder (though the user already provided one)
-            if (!apiKey) {
-                planResultDiv.classList.remove('hidden');
-                planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Erreur de Configuration : La clé API Gemini est manquante.</p>';
-                loadingIndicator.classList.add('hidden');
-                generatePlanBtn.disabled = false;
-                return;
+        const systemPrompt = `Agis comme un conseiller en investissement expert et objectif pour FMB Transmobilité Services. Ton objectif est de proposer un plan d'investissement initial concis (maximum 4 paragraphes courts), professionnel et motivant. Base-toi uniquement sur les 6 formules d'investissement du document.
+
+        1. Analyse le capital et le profil de risque.
+        2. Choisis la Formule FMB la plus pertinente (parmi 1 à 6).
+        3. Décris l'investissement recommandé et explique brièvement pourquoi cette formule correspond à l'investisseur.
+        4. Utilise un ton encourageant et professionnel (en français).
+        5. Formate la sortie en Markdown en utilisant des titres de niveau 3 (###) pour la recommandation principale et le titre de niveau 4 (####) pour les points clés, et en mettant en gras les chiffres importants.`;
+
+        const userQuery = `Mon capital initial est de ${new Intl.NumberFormat('fr-FR').format(capital)} FCFA. Mon profil de risque est "${riskProfile}". 
+        En utilisant UNIQUEMENT le document FMB ci-dessous, propose-moi la meilleure formule d'investissement FMB (parmi les 6 listées) et explique pourquoi.
+
+        --- DOCUMENT FMB ---
+        ${documentContent}
+        --- FIN DU DOCUMENT FMB ---`;
+
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            systemInstruction: { parts: [{ text: systemPrompt }] },
+        };
+
+        try {
+            const response = await fetchWithExponentialBackoff(LLM_API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            
+            let text = "Erreur : La génération du plan a échoué. Veuillez réessayer.";
+
+            if (result.candidates?.[0]?.content?.parts?.[0]?.text) {
+                 text = result.candidates[0].content.parts[0].text;
+            } else if (result.error) {
+                // Gestion des erreurs spécifiques (par exemple, quota dépassé ou clé invalide)
+                if (result.error.message.includes("API key not valid")) {
+                     text = "Erreur : La clé API fournie n'est pas valide ou n'est plus active. Veuillez en générer une nouvelle.";
+                } else if (result.error.message.includes("quota")) {
+                     text = "Erreur de Quota : Le nombre maximum d'appels à l'API a été atteint pour aujourd'hui. Veuillez réessayer demain.";
+                } else {
+                     text = `Erreur API: ${result.error.message}.`;
+                }
             }
             
-            if (!capital || capital < 500000) {
-                planResultDiv.classList.remove('hidden');
-                planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Veuillez entrer un capital initial valide (minimum 500 000 FCFA).</p>';
-                return;
-            }
-
-            // Show loading and disable button
-            planResultDiv.classList.remove('hidden');
-            planTextDiv.innerHTML = '';
-            loadingIndicator.classList.remove('hidden');
-            generatePlanBtn.disabled = true;
-
-            const systemPrompt = `Agis comme un conseiller en investissement expert et objectif pour FMB Transmobilité Services. Ton objectif est de proposer un plan d'investissement initial concis (maximum 4 paragraphes courts), professionnel et motivant. Base-toi uniquement sur les 6 formules d'investissement du document.
-
-            1. Analyse le capital et le profil de risque.
-            2. Choisis la Formule FMB la plus pertinente (parmi 1 à 6).
-            3. Décris l'investissement recommandé et explique brièvement pourquoi cette formule correspond à l'investisseur.
-            4. Utilise un ton encourageant et professionnel (en français).
-            5. Formate la sortie en Markdown en utilisant des titres de niveau 3 (###) pour la recommandation principale et le titre de niveau 4 (####) pour les points clés, et en mettant en gras les chiffres importants.`;
-
-            const userQuery = `Mon capital initial est de ${new Intl.NumberFormat('fr-FR').format(capital)} FCFA. Mon profil de risque est "${riskProfile}". 
-            En utilisant UNIQUEMENT le document FMB ci-dessous, propose-moi la meilleure formule d'investissement FMB (parmi les 6 listées) et explique pourquoi.
-
-            --- DOCUMENT FMB ---
-            ${documentContent}
-            --- FIN DU DOCUMENT FMB ---`;
-
-            const payload = {
-                contents: [{ parts: [{ text: userQuery }] }],
-                systemInstruction: { parts: [{ text: systemPrompt }] },
-            };
-
-            try {
-                const response = await fetchWithExponentialBackoff(LLM_API_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-                
-                let text = "Erreur : La génération du plan a échoué. Veuillez réessayer.";
-
-                if (result.candidates?.[0]?.content?.parts?.[0]?.text) {
-                     text = result.candidates[0].content.parts[0].text;
-                } else if (result.error) {
-                    // Gestion des erreurs spécifiques (par exemple, quota dépassé ou clé invalide)
-                    if (result.error.message.includes("API key not valid")) {
-                         text = "Erreur : La clé API fournie n'est pas valide ou n'est plus active. Veuillez en générer une nouvelle.";
-                    } else if (result.error.message.includes("quota")) {
-                         text = "Erreur de Quota : Le nombre maximum d'appels à l'API a été atteint pour aujourd'hui. Veuillez réessayer demain.";
-                    } else {
-                         text = `Erreur API: ${result.error.message}.`;
-                    }
-                }
-                
-                // Correction: Convertir le Markdown simple en HTML pour une meilleure lisibilité
-                const formattedText = text
-                    .replace(/###\s*(.*)/g, '<h3 class="text-xl font-bold text-teal-300 mt-4 mb-2">$1</h3>') // Titre 3
-                    .replace(/####\s*(.*)/g, '<h4 class="text-lg font-semibold text-teal-400 mt-3 mb-1">$1</h4>') // Titre 4
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Mise en gras
-                    .split('\n')
-                    .map(line => line.startsWith('<h') ? line : line.trim() === '' ? '' : `<p>${line}</p>`)
-                    .join('');
+            // Correction: Convertir le Markdown simple en HTML pour une meilleure lisibilité
+            const formattedText = text
+                .replace(/###\s*(.*)/g, '<h3 class="text-xl font-bold text-teal-300 mt-4 mb-2">$1</h3>') // Titre 3
+                .replace(/####\s*(.*)/g, '<h4 class="text-lg font-semibold text-teal-400 mt-3 mb-1">$1</h4>') // Titre 4
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // CONVERSION GRAS (Markdown ** en HTML <strong>)
+                .split('\n')
+                .map(line => line.startsWith('<h') || line.startsWith('<strong>') ? line : line.trim() === '' ? '' : `<p>${line}</p>`)
+                .join('');
 
 
-                planTextDiv.innerHTML = formattedText;
+            planTextDiv.innerHTML = formattedText;
 
-            } catch (error) {
-                console.error("Gemini API call error:", error);
-                planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Une erreur de réseau s\'est produite (impossible d\'atteindre l\'API). Veuillez réessayer plus tard.</p>';
-            } finally {
-                loadingIndicator.classList.add('hidden');
-                generatePlanBtn.disabled = false;
-            }
+        } catch (error) {
+            console.error("Gemini API call error:", error);
+            planTextDiv.innerHTML = '<p class="text-red-400 font-bold">Erreur de connexion au service d\'analyse. Veuillez vérifier votre connexion ou réessayer plus tard.</p>';
+        } finally {
+            loadingIndicator.classList.add('hidden');
+            generatePlanBtn.disabled = false;
         }
-        
-        window.generateInvestmentPlan = generateInvestmentPlan; // Expose to global scope for onclick
-    </script>
+    }
+</script>
+
 </body>
 </html>
