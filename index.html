@@ -18,7 +18,6 @@
         .modal.active { display: flex; }
         .step-card:hover { border-left: 4px solid #0d9488; padding-left: 1.5rem; transition: all 0.3s ease; }
         
-        /* Bouton WhatsApp Flottant */
         .whatsapp-float {
             position: fixed; bottom: 30px; right: 30px;
             background-color: #25d366; color: white;
@@ -97,14 +96,31 @@
                     </div>
                 </div>
             </div>
+            
             <div class="bg-slate-900 rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-center text-white border border-slate-800 shadow-2xl">
                 <div class="text-5xl md:text-6xl mb-6">🎯</div>
-                <h4 class="text-2xl md:text-3xl font-black mb-6 italic">Objectif : <br>30 Véhicules gérés.</h4>
-                <p class="text-slate-400 leading-relaxed italic mb-8">
-                    Nous ne nous contentons pas de gérer des voitures ; nous construisons l'infrastructure data du transport en Afrique de l'Ouest.
-                </p>
+                <h4 class="text-2xl md:text-3xl font-black mb-6 italic">Objectif : 30 Véhicules<br><span class="text-teal-500">La porte vers notre App VTC.</span></h4>
+                <div class="space-y-6 text-slate-300 italic mb-8">
+                    <p>
+                        Notre vision est claire : une fois la barre des <strong>30 véhicules en gestion</strong> franchie, FMB lancera sa propre <strong>application de réservation VTC</strong> concurrente des géants actuels.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-teal-500 font-bold">●</span>
+                            <span><strong>Souveraineté :</strong> En gérant nos propres voitures, nous garantissons la qualité de service pour l'application.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-teal-500 font-bold">●</span>
+                            <span><strong>Commissions Prioritaires :</strong> Les investisseurs qui nous ont confié leurs voitures ou co-investi recevront des commissions sur chaque course effectuée sur la future plateforme.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-teal-500 font-bold">●</span>
+                            <span><strong>Puissance du Réseau :</strong> Atteindre 30 véhicules permet de couvrir les zones stratégiques de Dakar et d'assurer une disponibilité immédiate aux clients.</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="p-6 bg-teal-600/10 border border-teal-500/30 rounded-2xl">
-                    <p class="text-teal-400 font-bold italic">"La transparence génère la confiance, la technologie génère la richesse."</p>
+                    <p class="text-teal-400 font-bold italic">"Investir aujourd'hui dans une voiture, c'est devenir actionnaire du transport technologique de demain."</p>
                 </div>
             </div>
         </div>
@@ -115,122 +131,136 @@
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-black italic mb-4">Architecture d'Investissement</h2>
-            <p class="text-slate-500 italic">Cliquez sur une formule pour les détails financiers.</p>
+            <p class="text-slate-500 italic">Cliquez sur une formule pour les détails financiers et les avantages "App VTC".</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
             <div onclick="openModal('modal1')" class="group p-8 md:p-10 bg-white border border-slate-200 rounded-[2.5rem] cursor-pointer hover:border-teal-500 transition-all">
                 <h4 class="text-2xl font-black mb-4 italic">01. Gestion Pure</h4>
-                <p class="text-slate-500 mb-8 italic">Vous avez le véhicule, nous avons la technologie et les chauffeurs.</p>
-                <span class="text-teal-600 font-bold uppercase tracking-widest text-xs group-hover:underline">Explorer →</span>
+                <p class="text-slate-500 mb-8 italic">Confiez-nous votre véhicule. Nous gérons tout, vous encaissez.</p>
+                <span class="text-teal-600 font-bold uppercase tracking-widest text-xs group-hover:underline">Détails & Parts →</span>
             </div>
 
             <div onclick="openModal('modal3')" class="group p-8 md:p-10 bg-slate-900 text-white rounded-[2.5rem] cursor-pointer ring-8 ring-teal-500/5 relative overflow-hidden">
                 <div class="absolute top-0 right-0 bg-teal-600 text-[10px] font-black px-4 py-2 uppercase italic">Populaire</div>
                 <h4 class="text-2xl font-black mb-4 italic">03. Co-Investissement</h4>
-                <p class="text-slate-400 mb-8 italic">Apportez dès 1M FCFA, FMB complète le capital pour l'achat.</p>
-                <span class="text-teal-400 font-bold uppercase tracking-widest text-xs group-hover:underline">Voir le montage →</span>
+                <p class="text-slate-400 mb-8 italic">Investissez par "Parts" à partir de 1M FCFA pour un véhicule neuf.</p>
+                <span class="text-teal-400 font-bold uppercase tracking-widest text-xs group-hover:underline">Simulation des Parts →</span>
             </div>
 
             <div onclick="openModal('modal6')" class="group p-8 md:p-10 bg-white border border-slate-200 rounded-[2.5rem] cursor-pointer hover:border-teal-500 transition-all">
                 <h4 class="text-2xl font-black mb-4 italic">06. Pack Flotte Bus</h4>
-                <p class="text-slate-500 mb-8 italic">Investissement sur le transport de masse et contrats logistiques.</p>
+                <p class="text-slate-500 mb-8 italic">Investissement massif sur le transport interurbain et scolaire.</p>
                 <span class="text-teal-600 font-bold uppercase tracking-widest text-xs group-hover:underline">Rendement →</span>
             </div>
         </div>
     </div>
 </section>
 
-<section id="simulator" class="py-24 bg-slate-900">
+<section id="simulator" class="py-24 bg-slate-50 border-y border-slate-100">
     <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-black text-white italic mb-12">Simulateur de Croissance IA</h2>
-        <div class="grid md:grid-cols-2 gap-6 text-left mb-10">
-            <div>
-                <label class="text-teal-500 text-[10px] font-black uppercase italic mb-2 block">Capital (FCFA)</label>
-                <input type="number" id="capInput" value="1000000" class="w-full bg-slate-800 border border-slate-700 p-4 rounded-xl text-white outline-none focus:ring-2 ring-teal-500">
-            </div>
-            <div>
-                <label class="text-teal-500 text-[10px] font-black uppercase italic mb-2 block">Durée souhaitée</label>
-                <select id="durationSelect" class="w-full bg-slate-800 border border-slate-700 p-4 rounded-xl text-white outline-none">
-                    <option value="12">12 Mois (Court terme)</option>
-                    <option value="24">24 Mois (Standard)</option>
-                    <option value="36">36 Mois (Patrimonial)</option>
-                </select>
-            </div>
+        <div class="mb-12">
+            <h2 class="text-3xl font-black italic mb-4">Simulateur de Croissance FMB</h2>
+            <p class="text-slate-500 italic">Estimez vos revenus mensuels selon votre capital.</p>
         </div>
-        <button onclick="simulate()" class="w-full py-5 bg-teal-600 text-white font-black rounded-2xl uppercase tracking-widest hover:bg-teal-500 transition shadow-xl italic">Calculer mon ROI</button>
-        <div id="simRes" class="hidden mt-10 p-8 bg-slate-800/50 border border-teal-500/20 rounded-3xl text-left italic text-slate-300"></div>
+        
+        <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-slate-100">
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-10">
+                <div>
+                    <label class="text-slate-900 text-[10px] font-black uppercase italic mb-3 block">Votre Capital (FCFA)</label>
+                    <input type="number" id="capInput" value="1000000" class="w-full bg-slate-50 border border-slate-200 p-5 rounded-2xl outline-none focus:ring-2 ring-teal-500 font-bold">
+                </div>
+                <div>
+                    <label class="text-slate-900 text-[10px] font-black uppercase italic mb-3 block">Type de placement</label>
+                    <select id="durationSelect" class="w-full bg-slate-50 border border-slate-200 p-5 rounded-2xl outline-none font-bold">
+                        <option value="12">Co-investissement (Parts)</option>
+                        <option value="24">Gestion Véhicule Propre</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="simulate()" class="w-full py-5 bg-slate-900 text-white font-black rounded-2xl uppercase tracking-widest hover:bg-teal-600 transition shadow-xl italic">Générer l'estimation</button>
+            <div id="simRes" class="hidden mt-10 p-8 bg-teal-50 border border-teal-100 rounded-3xl text-left italic text-slate-700"></div>
+        </div>
     </div>
 </section>
 
 <div id="modal1" class="modal" onclick="closeM(event)">
     <div class="bg-white max-w-2xl w-full rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
-        <h3 class="text-2xl font-black mb-6 italic underline">01. Gestion Assistée</h3>
-        <p class="text-slate-600 mb-6 italic italic">Nous transformons votre véhicule en machine à revenus connectée.</p>
-        <ul class="space-y-3 text-sm text-slate-700 italic mb-8">
-            <li>✅ <strong>90% de revenus</strong> pour le propriétaire.</li>
-            <li>✅ Accès à l'application <strong>Trans-Gestion</strong> (GPS, Maintenance).</li>
-            <li>✅ Gestion des chauffeurs et versements automatisés.</li>
-        </ul>
-        <button onclick="closeM(event)" class="w-full py-3 bg-slate-100 rounded-xl font-bold">Fermer</button>
+        <h3 class="text-2xl font-black mb-6 italic underline">01. Gestion de votre Véhicule</h3>
+        <p class="text-slate-600 mb-6 italic">Vous apportez le véhicule (neuf ou occasion récente), nous gérons l'exploitation complète.</p>
+        <div class="space-y-4 mb-8">
+            <div class="flex justify-between p-4 bg-slate-50 rounded-xl">
+                <span class="font-bold italic">Part Revenus Propriétaire :</span>
+                <span class="text-teal-600 font-black">90% du Net</span>
+            </div>
+            <p class="text-sm text-slate-500 italic">
+                <strong>Exemple :</strong> Pour une recette mensuelle nette de 450 000 FCFA, vous recevez 405 000 FCFA. FMB prélève 10% pour la maintenance prédictive, le suivi GPS et la gestion chauffeur.
+            </p>
+            <div class="p-4 bg-teal-600/10 border-l-4 border-teal-600 text-sm italic">
+                <strong>Avantage App VTC :</strong> En gérant votre véhicule, vous devenez "Membre Fondateur". Lors du lancement de l'application, votre véhicule sera prioritaire sur les courses VIP.
+            </div>
+        </div>
+        <button onclick="closeM(event)" class="w-full py-3 bg-slate-900 text-white rounded-xl font-bold italic">Fermer</button>
     </div>
 </div>
 
 <div id="modal3" class="modal" onclick="closeM(event)">
     <div class="bg-white max-w-2xl w-full rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
-        <h3 class="text-2xl font-black mb-6 italic underline text-teal-600">03. Co-Investissement (1M+)</h3>
-        <p class="text-slate-600 mb-6 italic italic">Le levier FMB : Nous complétons votre investissement.</p>
-        <div class="bg-slate-100 p-6 rounded-2xl mb-8 italic">
-            <p class="font-black italic underline mb-4">Exemple sur 1 000 000 FCFA :</p>
-            <div class="space-y-2 text-sm">
-                <div class="flex justify-between"><span>Votre apport :</span><span class="font-black">1 000 000 FCFA</span></div>
-                <div class="flex justify-between text-teal-600"><span>Complément FMB :</span><span class="font-black">~2 500 000 FCFA</span></div>
-                <div class="flex justify-between pt-2 border-t border-slate-300"><span>Actif :</span><span class="font-black">Véhicule Neuf</span></div>
+        <h3 class="text-2xl font-black mb-6 italic underline text-teal-600">03. Co-Investissement (Parts)</h3>
+        <p class="text-slate-600 mb-6 italic">Idéal pour investir sans posséder un véhicule complet.</p>
+        <div class="bg-slate-50 p-6 rounded-2xl mb-8 italic">
+            <p class="font-black italic mb-4">Fonctionnement par Parts :</p>
+            <div class="space-y-4 text-sm">
+                <div class="flex justify-between"><span>Prix d'une Part :</span><span class="font-black">1 000 000 FCFA</span></div>
+                <div class="flex justify-between text-teal-600"><span>Revenu Mensuel Est. / Part :</span><span class="font-black">60 000 - 85 000 FCFA</span></div>
+                <hr>
+                <p><strong>L'effet de levier :</strong> FMB regroupe 7 investisseurs pour acheter un véhicule neuf type Suzuki Dzire. Chaque investisseur possède 1/7ème du véhicule.</p>
             </div>
+        </div>
+        <div class="p-4 bg-slate-900 text-white rounded-xl text-sm italic mb-8">
+            <strong>Futur :</strong> À l'objectif des 30 véhicules, les co-investisseurs touchent un pourcentage sur les frais de service de l'application VTC FMB au prorata de leurs parts.
         </div>
         <button onclick="closeM(event)" class="w-full py-3 bg-slate-100 rounded-xl font-bold">Fermer</button>
     </div>
 </div>
 
 <footer id="contact" class="bg-slate-900 pt-24 pb-12 text-white border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
         <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-20">
             <div class="space-y-6">
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-3 justify-center md:justify-start">
                     <div class="bg-teal-600 p-2 rounded-lg text-white font-bold">FMB</div>
                     <span class="text-xl font-extrabold tracking-tighter uppercase">TransMobilité</span>
                 </div>
                 <p class="text-slate-400 text-sm italic leading-relaxed">
-                    Leader de la gestion de flotte digitalisée au Sénégal. Nous créons de la valeur via la technologie.
+                    Nous construisons l'infrastructure de transport de demain. De la gestion de flotte à l'application VTC souveraine.
                 </p>
             </div>
             <div>
-                <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Navigation</h4>
-                <ul class="space-y-4 text-sm font-bold italic text-slate-300">
-                    <li><a href="#vision" class="hover:text-teal-500">Notre Vision 2027</a></li>
-                    <li><a href="#formules" class="hover:text-teal-500">Investissement</a></li>
-                    <li><a href="https://wa.me/33695429671" class="hover:text-teal-500">Support Diaspora</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Contact Direct</h4>
+                <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Nous Contacter</h4>
                 <div class="space-y-4 text-sm italic font-bold">
-                    <p>📞 +33 06 95 42 96 71</p>
-                    <p>✉️ ndamaniang99@gmail.com</p>
+                    <p class="hover:text-teal-500 cursor-pointer">📞 +33 06 95 42 96 71</p>
+                    <p class="hover:text-teal-500 cursor-pointer underline">✉️ ndamaniang99@gmail.com</p>
                 </div>
             </div>
             <div>
                 <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Siège Social</h4>
-                <div class="p-5 bg-slate-800 rounded-2xl border border-slate-700 text-sm italic">
+                <div class="text-sm italic text-slate-300">
                     <strong>Dakar, Sénégal</strong><br>
                     Cité Keur Gorgui / Sacré Cœur<br>
-                    Bureau de Gestion Digitale
+                    Immeuble FMB Tech, 4ème Étage
+                </div>
+            </div>
+            <div>
+                <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Transparence</h4>
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full text-[10px] font-bold">CONTRAT NOTARIÉ</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full text-[10px] font-bold">SUIVI GPS LIVE</span>
                 </div>
             </div>
         </div>
-        <div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">
-            <span>© 2025 FMB TransMobilité Services SARL.</span>
-            <div class="flex gap-6"><span>Contrats Notariés</span><span>Protection Data</span></div>
+        <div class="pt-12 border-t border-slate-800 text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">
+            © 2025 FMB TransMobilité Services SARL. | Développement & Vision par FMB Tech.
         </div>
     </div>
 </footer>
@@ -256,11 +286,12 @@
         res.classList.remove('hidden');
         res.innerHTML = "Analyse FMB en cours...";
         setTimeout(() => {
+            const revenue = (cap * 0.07).toLocaleString();
             res.innerHTML = `
-                <h5 class="text-white font-black mb-4 underline">Rapport d'Opportunité :</h5>
-                - Formule recommandée : ${cap >= 1000000 ? 'Co-Investissement Pack 3' : 'Plan Collectif'}<br>
-                - Rendement prévisionnel : 22% à 35% annuel<br>
-                <span class="text-teal-400">Note : L'app Trans-Gestion réduit les pertes de 18%.</span>
+                <h5 class="text-slate-900 font-black mb-4 underline">Estimation FMB TransMobilité :</h5>
+                - Revenu mensuel estimé : <span class="text-teal-600 font-bold">${revenue} FCFA</span><br>
+                - Statut : Éligible au programme "Fondateur App VTC"<br>
+                - Note : Le passage à notre propre application augmentera vos revenus de 12% grâce à la suppression des commissions tiers.
             `;
         }, 1200);
     }
