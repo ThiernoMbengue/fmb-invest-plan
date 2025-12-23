@@ -14,8 +14,24 @@
             background-size: cover; background-position: center;
         }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .modal { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 20px; }
+        
+        /* --- CORRECTION DU DÉFILEMENT (SCROLL) ICI --- */
+        .modal { 
+            display: none; 
+            position: fixed; 
+            inset: 0; 
+            z-index: 1000; 
+            background: rgba(0,0,0,0.85); 
+            backdrop-filter: blur(8px); 
+            align-items: flex-start; /* Aligné en haut pour permettre le scroll */
+            justify-content: center; 
+            padding: 20px; 
+            overflow-y: auto; /* Active le défilement vertical */
+        }
         .modal.active { display: flex; }
+        .modal-content { margin-top: auto; margin-bottom: auto; width: 100%; max-width: 42rem; }
+        /* ------------------------------------------- */
+
         .step-card:hover { border-left: 4px solid #0d9488; padding-left: 1.5rem; transition: all 0.3s ease; }
         
         .whatsapp-float {
@@ -185,7 +201,7 @@
 </section>
 
 <div id="modal1" class="modal" onclick="closeM(event)">
-    <div class="bg-white max-w-2xl w-full rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
+    <div class="modal-content bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
         <h3 class="text-2xl font-black mb-6 italic underline">01. Gestion de votre Véhicule</h3>
         <p class="text-slate-600 mb-6 italic">Vous apportez le véhicule (neuf ou occasion récente), nous gérons l'exploitation complète.</p>
         <div class="space-y-4 mb-8">
@@ -205,7 +221,7 @@
 </div>
 
 <div id="modal3" class="modal" onclick="closeM(event)">
-    <div class="bg-white max-w-2xl w-full rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
+    <div class="modal-content bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
         <h3 class="text-2xl font-black mb-6 italic underline text-teal-600">03. Co-Investissement (Partenariat 50/50)</h3>
         <p class="text-slate-600 mb-6 italic">Un modèle d'association équitable pour accélérer notre objectif de 30 véhicules.</p>
         
@@ -285,7 +301,7 @@
                 <h4 class="text-teal-500 font-black text-xs uppercase tracking-widest mb-8 italic">Siège Social</h4>
                 <div class="text-sm italic text-slate-300">
                     <strong>Dakar, Sénégal</strong><br>
-                    Cité Keur Gorgui / Sacré Cœur<br>
+                    Garage Petersen<br>
                     Immeuble FMB Tech, 4ème Étage
                 </div>
             </div>
